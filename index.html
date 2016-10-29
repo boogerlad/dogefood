@@ -7,6 +7,9 @@
 		<meta name="keywords" content="soylent">
 		<link rel="stylesheet" type="text/css" href="//csshake.surge.sh/csshake.min.css">
 		<style>
+[v-cloak] {
+  display: none;
+}
 			body
 			{
 				background-color: #ffb35c;
@@ -156,7 +159,7 @@ span a {
 <content id="test">
 			<div>
 				<span>
-					<img v-bind:class="['shake-constant', cass('dogefood')]" src="a0126590_22301391.jpg" />
+					<img v-cloak v-bind:class="['shake-constant', cass('dogefood')]" src="a0126590_22301391.jpg" />
 					<a v-if="dogefood > 0" href="#">checkout ${{ checkout }}CAD</a>
 				</span>
 <section class="performance-facts">
@@ -408,7 +411,7 @@ span a {
 			<br>
 			<div>
 				<span>
-					<img v-bind:class="['shake-constant', cass('prepost')]" src="mct.png" />
+					<img v-cloak v-bind:class="['shake-constant', cass('prepost')]" src="mct.png" />
 					<a v-if="prepost > 0" href="#">checkout ${{ checkout }}CAD</a>
 				</span>
 <section class="performance-facts">
